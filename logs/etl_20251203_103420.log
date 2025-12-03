@@ -2,3 +2,17 @@
 2025-12-03 10:34:20,160 - INFO - Drop Excel files in upload/ - they will auto-process
 2025-12-03 10:34:20,161 - INFO - Press Ctrl+C to stop
 
+2025-12-03 10:34:21,163 - INFO - Processing: upload\707858 ASCS Single site small (1).xlsm
+2025-12-03 10:34:21,304 - INFO - Visible sheets: ['Cover', 'Active Scale', 'Scalar i7', 'Site Charge and Tariff', 'Summary']
+2025-12-03 10:34:21,370 - INFO - Processing sheet: Cover
+2025-12-03 10:34:21,370 - INFO - Skipped Cover - missing columns
+2025-12-03 10:34:21,370 - INFO - Processing sheet: Active Scale
+2025-12-03 10:34:21,370 - INFO - Built 27 rows from Active Scale
+2025-12-03 10:34:21,370 - INFO - Processing sheet: Scalar i7
+2025-12-03 10:34:21,370 - INFO - Built 13 rows from Scalar i7
+2025-12-03 10:34:21,370 - INFO - Processing sheet: Site Charge and Tariff
+2025-12-03 10:34:21,370 - INFO - Built 2 rows from Site Charge and Tariff
+2025-12-03 10:34:21,370 - INFO - Processing sheet: Summary
+2025-12-03 10:34:21,370 - INFO - Skipped Summary - missing columns
+2025-12-03 10:34:21,551 - INFO - Output saved: .\707858 ASCS Single site small (1).xlsx
+2025-12-03 10:34:21,553 - INFO - Archived to: archive\707858 ASCS Single site small (1).xlsm
