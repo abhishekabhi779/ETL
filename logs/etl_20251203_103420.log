@@ -1,0 +1,4 @@
+2025-12-03 10:34:20,160 - INFO - Watcher started - monitoring upload/ folder
+2025-12-03 10:34:20,160 - INFO - Drop Excel files in upload/ - they will auto-process
+2025-12-03 10:34:20,161 - INFO - Press Ctrl+C to stop
+

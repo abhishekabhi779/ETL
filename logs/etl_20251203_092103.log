@@ -1,0 +1,18 @@
+2025-12-03 09:21:03,741 - INFO - Watcher started - monitoring upload/ folder
+2025-12-03 09:21:03,741 - INFO - Drop Excel files in upload/ - they will auto-process
+2025-12-03 09:21:03,741 - INFO - Press Ctrl+C to stop
+
+2025-12-03 09:21:04,751 - INFO - Processing: upload\707858 ASCS 3 Site small.xlsm
+2025-12-03 09:21:04,906 - INFO - Visible sheets: ['Cover', 'Active Scale', 'Scalar i7', 'Site Charge and Tariff', 'Summary']
+2025-12-03 09:21:04,968 - INFO - Processing sheet: Cover
+2025-12-03 09:21:04,968 - INFO - Skipped Cover - missing columns
+2025-12-03 09:21:04,968 - INFO - Processing sheet: Active Scale
+2025-12-03 09:21:04,975 - INFO - Built 40 rows from Active Scale
+2025-12-03 09:21:04,975 - INFO - Processing sheet: Scalar i7
+2025-12-03 09:21:04,978 - INFO - Built 13 rows from Scalar i7
+2025-12-03 09:21:04,978 - INFO - Processing sheet: Site Charge and Tariff
+2025-12-03 09:21:04,978 - INFO - Built 2 rows from Site Charge and Tariff
+2025-12-03 09:21:04,978 - INFO - Processing sheet: Summary
+2025-12-03 09:21:04,978 - INFO - Skipped Summary - missing columns
+2025-12-03 09:21:05,153 - INFO - Output saved: .\707858 ASCS 3 Site small.xlsx
+2025-12-03 09:21:05,154 - INFO - Archived to: archive\707858 ASCS 3 Site small.xlsm

@@ -1,0 +1,7 @@
+2025-12-02 16:03:08,765 - INFO - Starting file watcher on folder: .
+2025-12-02 16:03:08,765 - INFO - Supported extensions: ('.xlsm', '.xlsx', '.xls')
+2025-12-02 16:03:08,765 - INFO - Archive folder: archive
+2025-12-02 16:03:08,765 - INFO - Log file: logs\etl_20251202_160308.log
+2025-12-02 16:03:08,778 - INFO - Watcher is running. Press Ctrl+C to stop.
+2025-12-02 16:04:10,862 - INFO - Stopping watcher...
+2025-12-02 16:04:10,862 - INFO - Watcher stopped.

@@ -1,0 +1,29 @@
+2025-12-02 16:05:51,982 - INFO - Watcher started - monitoring upload/ folder
+2025-12-02 16:05:51,984 - INFO - Drop Excel files in upload/ - they will auto-process
+2025-12-02 16:05:51,984 - INFO - Press Ctrl+C to stop
+
+2025-12-02 16:05:52,986 - INFO - Processing: upload\demo_input.xlsm
+2025-12-02 16:05:53,121 - INFO - Visible sheets: ['Cover', 'Config 1', 'Config 2', 'Config 3', 'Other Items', 'Summary']
+2025-12-02 16:05:53,194 - INFO - Processing sheet: Cover
+2025-12-02 16:05:53,206 - INFO - Skipped Cover - missing columns
+2025-12-02 16:05:53,207 - INFO - Processing sheet: Config 1
+2025-12-02 16:05:53,207 - INFO - Built 16 rows from Config 1
+2025-12-02 16:05:53,207 - INFO - Processing sheet: Config 2
+2025-12-02 16:05:53,207 - INFO - Built 7 rows from Config 2
+2025-12-02 16:05:53,207 - INFO - Processing sheet: Config 3
+2025-12-02 16:05:53,217 - INFO - Built 11 rows from Config 3
+2025-12-02 16:05:53,217 - INFO - Processing sheet: Other Items
+2025-12-02 16:05:53,217 - INFO - Built 3 rows from Other Items
+2025-12-02 16:05:53,217 - INFO - Processing sheet: Summary
+2025-12-02 16:05:53,217 - INFO - Skipped Summary - missing columns
+2025-12-02 16:05:53,452 - INFO - Output saved: .\demo_input.xlsx
+2025-12-02 16:05:53,468 - INFO - Archived to: archive\demo_input.xlsm
+2025-12-02 16:05:54,476 - INFO - Processing: upload\Jackson Hewitt-i3-2xLTO-7FC-50sl-1yrNBDgold-11-21-25 (2).xlsx
+2025-12-02 16:05:54,550 - INFO - Visible sheets: ['Cover', 'Config 1']
+2025-12-02 16:05:54,594 - INFO - Processing sheet: Cover
+2025-12-02 16:05:54,594 - INFO - Skipped Cover - missing columns
+2025-12-02 16:05:54,594 - INFO - Processing sheet: Config 1
+2025-12-02 16:05:54,599 - INFO - Built 16 rows from Config 1
+2025-12-02 16:05:54,712 - INFO - Output saved: .\Jackson Hewitt-i3-2xLTO-7FC-50sl-1yrNBDgold-11-21-25 (2).xlsx
+2025-12-02 16:05:54,715 - INFO - Archived to: archive\Jackson Hewitt-i3-2xLTO-7FC-50sl-1yrNBDgold-11-21-25 (2).xlsx
+2025-12-03 09:19:48,404 - INFO - Watcher stopped

@@ -1,0 +1,72 @@
+╔══════════════════════════════════════════════════════════════╗
+║         ETL AUTO-PROCESSING SETUP - QUICK GUIDE             ║
+╚══════════════════════════════════════════════════════════════╝
+
+LOCATION: C:\py\Autoapp\
+
+🚀 FIRST TIME SETUP (ONE TIME ONLY):
+
+1. Open PowerShell
+2. Navigate to folder:
+   cd C:\py\Autoapp
+
+3. Install requirement:
+   pip install watchdog
+
+4. Start watcher:
+   python main_watch.py
+
+   ✓ Leave this running!
+
+
+📤 AFTER SETUP - WORKFLOW:
+
+1. Keep "python main_watch.py" running in PowerShell
+2. Copy your Excel file to: C:\py\Autoapp\
+3. Wait 1-2 seconds
+4. Your output file appears: yourfile.xlsx
+5. Check logs if needed: logs/
+
+
+📁 FOLDER CONTENTS:
+
+Main Folder:
+  • main_watch.py   - The auto-processor
+  • README.md       - Full documentation
+  • logs/           - Processing logs
+  • archive/        - Your input files (archived)
+  • *.xlsx          - Your output files
+
+Killed Folder:
+  • Unused reference files (safe to delete)
+
+
+✅ FILE REQUIREMENTS:
+
+Your Excel file needs:
+  ✓ "Model Number" column (or similar)
+  ✓ "Qty" or "Quantity" column
+  ✓ "Net Price" column (or similar)
+  ✓ Sheets must be visible (not hidden)
+
+If file doesn't match, check logs/ for error details.
+
+
+📖 NEED HELP?
+
+Read: README.md
+
+Troubleshooting:
+  • Check logs/ folder for error details
+  • Verify Excel columns are named correctly
+  • Make sure "python main_watch.py" is still running
+
+
+🎯 SUMMARY:
+
+1. pip install watchdog
+2. python main_watch.py
+3. Drop Excel files in folder
+4. Get .xlsx output automatically
+
+That's it! ✨
