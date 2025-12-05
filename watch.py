@@ -1,5 +1,5 @@
 """
-Simple File Processor - Monitors upload/ folder
+Auto quote 2.0 with watchdog
 
 Drop Excel files (.xlsm, .xlsx) into the upload/ folder.
 They are automatically processed and moved to archive/.
@@ -138,37 +138,26 @@ def find_value_near_key(ws, key_tokens):
     return None
 
 
-def extract_cover_and_customer(ws):
-    """Extract metadata from Cover sheet"""
-    cover_keys = [
-        (["quotation", "#"], "Quotation #"),
-        (["qdr", "#"], "QDR #"),
-        (["spr", "#"], "SPR #"),
-        (["opportunity", "#"], "Opportunity #"),
-        (["quote", "name"], "Quote Name"),
-        (["quotation", "date"], "Quotation Date"),
-        (["valid", "until"], "Valid Until"),
-    ]
-    customer_keys = [
-        (["contact", "name"], "Contact Name"),
-        (["company"], "Company"),
-        (["address"], "Address"),
-        (["city", "state", "zip"], "City, State ZIP"),
-        (["country"], "Country"),
-        (["phone"], "Phone Number"),
-        (["e-mail", "email"], "E-mail"),
-    ]
-    
+def extract_cover_and_customer(ws, start_row=9, end_row=33):
+    """
+    Extract cover and customer details from columns B and C.
+    Skips rows where customer details (Column C) are empty.
+    """
     cover_details = {}
-    for tokens, label in cover_keys:
-        val = find_value_near_key(ws, tokens)
-        cover_details[label] = val if val else "N/A"
-    
     customer_details = {}
-    for tokens, label in customer_keys:
-        val = find_value_near_key(ws, tokens)
-        customer_details[label] = val if val else "N/A"
+
+    for row in ws.iter_rows(min_row=start_row, max_row=end_row, min_col=2, max_col=3):
+        col_b = row[0].value  # Column B
+        col_c = row[1].value  # Column C
+
+        # Skip if customer detail is empty
+        if col_c is None or str(col_c).strip() == "":
+            continue
+
+        # Use Column B as key and Column C as value
+        cover_details[col_b] = col_c  # Mapping Cover → Customer
     
+
     return cover_details, customer_details
 
 
